@@ -1,4 +1,4 @@
-package com.vikvita.it_courses.ui.theme
+package com.vikvita.it_courses.compose.theme
 
 import androidx.compose.ui.unit.sp
 

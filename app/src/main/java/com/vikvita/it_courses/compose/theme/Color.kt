@@ -1,4 +1,4 @@
-package com.vikvita.it_courses.ui.theme
+package com.vikvita.it_courses.compose.theme
 import androidx.compose.ui.graphics.Color
 
 val primaryLight = Color(0xFF12B956)

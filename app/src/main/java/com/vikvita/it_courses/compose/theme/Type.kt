@@ -1,4 +1,4 @@
-package com.vikvita.it_courses.ui.theme
+package com.vikvita.it_courses.compose.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
