@@ -4,6 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.vikvita.it_courses.features.authorization.AuthScreen
 import kotlinx.serialization.Serializable
 
 
@@ -15,7 +16,14 @@ fun MainNavGraph(
         navController = navHostController,
         startDestination = MainNavRoutes.AuthorizationRoute
     ){
-        composable<MainNavRoutes.AuthorizationRoute>{  }
+        composable<MainNavRoutes.AuthorizationRoute>{
+            AuthScreen {
+                navHostController.navigate(MainNavRoutes.HomeRoute)
+            }
+        }
+        composable<MainNavRoutes.HomeRoute>{
+
+        }
 
     }
 
@@ -26,4 +34,6 @@ fun MainNavGraph(
 sealed interface MainNavRoutes{
     @Serializable
     data object AuthorizationRoute: MainNavRoutes
+    @Serializable
+    data object HomeRoute: MainNavRoutes
 }

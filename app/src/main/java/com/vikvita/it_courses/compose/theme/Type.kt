@@ -3,14 +3,15 @@ package com.vikvita.it_courses.compose.theme
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.font.toFontFamily
 import com.vikvita.it_courses.R
 
 private val roboto_regular = Font(R.font.roboto_regular).toFontFamily()
 private val roboto_medium = Font(R.font.roboto_medium).toFontFamily()
-private val roboto_semibold =
-    Font(R.font.roboto_regular, weight = FontWeight.SemiBold).toFontFamily()
+private val roboto_bold = Font(R.font.roboto_bold).toFontFamily()
+
 
 
 val AppTypography = Typography(
@@ -21,9 +22,9 @@ val AppTypography = Typography(
     labelLarge = TextStyle(fontFamily = roboto_medium)
 )
 
-fun Typography.buttonSmall(): TextStyle =
-    TextStyle(fontFamily = roboto_semibold, fontSize = Dimens.TextSize.xs)
+val Typography.buttonSmall:TextStyle
+    get() = TextStyle(fontFamily = roboto_bold, fontSize = Dimens.TextSize.xs)
 
-fun Typography.caption(): TextStyle =
-    TextStyle(fontFamily = roboto_regular, fontSize = Dimens.TextSize.xs)
+val Typography.caption:TextStyle
+   get()= TextStyle(fontFamily = roboto_regular, fontSize = Dimens.TextSize.xs)
 

@@ -1,5 +1,6 @@
 package com.vikvita.it_courses.compose.theme
 
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 object Dimens {
@@ -20,5 +21,25 @@ object Dimens {
         val l = 18.sp
         val xl = 28.sp
         val xxl = 36.sp
+    }
+    /**
+     * @property xxs 4.dp
+     * @property xs 8.dp
+     * @property s 12.dp
+     * @property m 16.dp
+     * @property l 18.dp
+     * @property xl 24.dp
+     * @property xxl 28.dp
+     * @property xxxl 32.dp
+     * */
+    object Paddings {
+        val xxs = 4.dp
+        val xs = 8.dp
+        val s = 12.dp
+        val m = 16.dp
+        val l = 18.dp
+        val xl = 24.dp
+        val xxl = 28.dp
+        val xxxl = 32.dp
     }
 }
