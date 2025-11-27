@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.navigation.compose.rememberNavController
 import com.vikvita.it_courses.compose.theme.AppTheme
@@ -16,9 +17,12 @@ class MainActivity : ComponentActivity() {
         setContent {
             val navController = rememberNavController()
             AppTheme {
-                MainNavGraph(
-                    navHostController = navController
-                )
+                Surface(color = MaterialTheme.colorScheme.background) {
+                    MainNavGraph(
+                        navHostController = navController
+                    )
+                }
+
             }
         }
     }
