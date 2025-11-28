@@ -10,4 +10,9 @@
     <string name="no_account">Нету аккаунта?</string>
     <string name="forgot_password">Забыли пароль</string>
 
+    <!--Bottom Navigation-->
+    <string name="home">Главная</string>
+    <string name="favourite">Избранное</string>
+    <string name="profile">Аккаунт</string>
+
 </resources>
